@@ -1,0 +1,305 @@
+a, p {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.wx_main {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.wx_main .wx_msg {
+    color: #666;
+    height: 12vh;
+    margin: 6vh 0 0 0;
+    margin-top:2vh;
+}
+
+.em_font {
+    color: #f0b23f;
+}
+
+/*.wx_main .wx_msg a {
+    font-size: 1.5rem;
+    color: #06d;
+    font-weight: 100;
+    text-decoration: underline;
+}*/
+
+.wx_msg + a {
+    display: block;
+    font-size: 1.5rem;
+    color: #06d;
+    margin-bottom: 18.6vh;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+.wx_checkbox {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    border: 1px solid #999;
+    margin-right: 1rem;
+}
+
+.wx_checkbox.on {
+    border-color: #1aac19;
+    background: url(../../../../images_new/icon_select.png) center center no-repeat;
+    background-size: 60%;
+    background-color: #1aac19;
+}
+
+.wxc {
+    position: relative;
+    top: -0.25rem;
+}
+
+.wxb {
+    margin-bottom: 1rem;
+}
+
+.wx_btn {
+    width: 80%;
+    background-color: #04be02;
+    border-radius: 0.5rem;
+    line-height: 7vh;
+    text-align: center;
+    color: #fff;
+    margin: 4.5vh auto 0;
+}
+.wx_btn:active{
+    background-color: #179b16;
+    color: #a2d7a2;
+}
+
+.wx_btn.normalClick {
+    background-color: #109b0f;
+}
+
+.shake-horizontal.normalClick {
+    background: none;
+}
+
+@keyframes shake-horizontal {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes shake-horizontal /* Safari 和 Chrome */
+{
+    0% {
+        -webkit-transform: translateX(0px);
+    }
+    25% {
+        -webkit-transform: translateX(-5px);
+    }
+    75% {
+        -webkit-transform: translateX(5px);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+    }
+}
+
+.shake-horizontal.run {
+    animation: shake-horizontal 100ms infinite linear;
+    -webkit-animation: shake-horizontal 100ms infinite linear;
+}
+
+.net_video{
+    width: 100vw;
+}
+.net_video .full_video{
+    position: absolute;
+    right: .1rem;
+    top: .1rem;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background: url(../../../../images_new/help_video_btn.png) center center no-repeat;
+    background-size: contain;
+    z-index: 999; 
+}
+.net_video video{
+    width: 100%;
+    height: 100%;
+}
+
+/* 填写wifi信息页面 */
+.login {
+    padding: 0;
+    margin: 0;
+    font-size: 115%;
+}
+
+.hide,
+.asso.hide {
+    display: none;
+}
+
+.login .img-wraper {
+    display: block;
+    text-align: center;
+    min-height: 35vw;
+    margin-top: 10vh;
+}
+
+.login img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.login form {
+    margin-top: 2vh;
+    position: relative;
+}
+
+.login div {
+    text-align: center;
+    margin: 2.5rem 0;
+}
+
+.login label {
+    display: inline-block;
+    width: 9rem;
+    line-height: 100%;
+}
+
+.login label .text-name {
+    display: inline-block;
+    width: 100%;
+}
+
+.login input {
+    width: 60vw;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.login .drop-down-icon {
+    position: absolute;
+    display: inline-block;
+    margin-top: 1.2rem;
+    margin-left: -2.5rem;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 12px solid #BFBFBF;
+}
+
+.login a {
+    padding: 10px 10vw;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.login a.disabled {
+    background-image: -webkit-linear-gradient(#ccc 0%, #ccc 100%);
+    background-image: linear-gradient(#ccc 0%, #ccc 100%);
+}
+
+.login a.disabled:active{
+    color: #fff;
+}
+
+.login .remind {
+    margin-top: -10px;
+    color: #666
+}
+
+.asso {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: calc(1.5rem + 20px);
+    margin: 0;
+    z-index: 20;
+    text-align: center;
+}
+
+.asso .wifi-hold {
+    display: inline-block;
+    width: 9rem;
+    margin: 0;
+}
+
+.asso .wifi-list {
+    display: inline-block;
+    width: 60vw;
+    margin: -2.5rem 0;
+    text-align: left;
+    padding: 5px 15px;
+    background: #fff;
+    max-height: 15rem;
+    border: #ccc solid 1px;
+    border-radius: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.asso .wifi-list ul li {
+    padding: 1rem 0;
+}
+
+.asso .wifi-list::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0);
+    border-left: 1px solid rgba(0, 0, 0, 0);
+}
+
+.asso .wifi-list::-webkit-scrollbar {
+    width: 5px;
+    height: 13px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.asso .wifi-list::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    min-height: 28px;
+}
+
+.asso .wifi-list::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+td{
+    vertical-align:middle;
+}
+
+.placeholder {
+    height: .5rem;
+}
+
+/* 设备绑定页 */
+.btn_parallel {
+    /*margin: 0 1rem 2rem;*/
+}
+
+.hide{
+    display: none;
+}

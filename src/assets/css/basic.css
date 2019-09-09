@@ -1,0 +1,33 @@
+/* 输入框 */
+.input_box{
+    border: 1px #ccc solid;
+    border-radius: 4px;
+    height: 3rem;
+    line-height: 3rem;
+    vertical-align:middle;
+    width: 50%;
+    /* 兼容输入框文字不垂直居中问题 */
+    padding: .4rem 1rem 0;
+}
+
+/*qrcode*/
+.shade{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	text-align: center;
+	animation: pop_kf_top 300ms;
+	/*解决点透问题*/
+	z-index: 999;
+}
+.qrcode_img img{
+	width: 100%;
+	height: 100%;
+}
+.qrcode_text{
+	color: #fff;
+	padding: 1rem;
+}

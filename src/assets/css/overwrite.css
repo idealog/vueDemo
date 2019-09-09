@@ -1,0 +1,6 @@
+#app,
+.lx-toast,
+.el-popper {
+  display: block;
+  opacity: unset;
+}

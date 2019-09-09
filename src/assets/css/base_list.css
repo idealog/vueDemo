@@ -1,0 +1,392 @@
+.base_list li {
+    height: 7rem;
+    padding: 0 1rem;
+    transition: height 200ms;
+    -webkit-transition: height 200ms;
+    overflow: hidden;
+}
+
+.base_list li:after {
+    content: "";
+    float: left;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    margin-top: -1px;
+}
+
+.base_list .noline:after {
+    display: none;
+}
+
+.base_list h3 {
+    float: left;
+    line-height: 7rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.base_list .t2 {
+    float: left;
+}
+
+.base_list .t2 h3 {
+    line-height: 1.6;
+    float: initial;
+}
+
+.base_list .t2 p {
+    color: #b2b2b2;
+}
+
+.base_list .tt {
+    height: 7rem;
+    padding-top: 1.5rem;
+}
+
+.base_list .tt h3 {
+    line-height: 1.4;
+    float: initial;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.base_list .tt p {
+    color: #999;
+    font-size: 1.5rem;
+    padding-top:.2rem;
+}
+
+.base_list li.sibs:after {
+    border-bottom-style: dashed;
+}
+
+.base_list .ibs.normalClick {
+    background-color: #fff;
+}
+
+.base_list .ibs {
+    height: 0;
+    overflow: hidden;
+    margin-top: -1px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.base_list .ibs.show {
+    height: 7rem;
+}
+
+.base_list .ibs div {
+    display: inline-block;
+    text-align: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 6px;
+    margin: 1rem 1rem;
+}
+
+.base_list .ibs div p {
+    line-height: 1.3rem;
+    display: block;
+    float: none;
+    text-align: center;
+}
+
+.base_list .resli .ibs {
+    border-top: 1px dashed #eee;
+    display: none;
+    height: 7rem;
+}
+
+.base_list .resli.sibs .ibs {
+    display: block;
+}
+
+.base_list .resli.sibs {
+    height: 14rem;
+}
+
+.base_list .resli.sibs:after {
+    border-bottom-style: solid;
+}
+
+.base_list .play, .base_list .like, .base_list .detail, .base_list .delete {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto;
+}
+
+.base_list .ibs .icons {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto;
+}
+
+.base_list .ibs .play {
+    background: none;
+}
+
+/*试听图标*/
+.base_list .ibs .play.audition {
+    background: url(../../../../images_new/list_listen.png) center center no-repeat;
+    background-size: 60%;
+}
+
+/*暂停图标*/
+.base_list .ibs .play.pause {
+    background: url(../../../../images_new/list_pause.png) center center no-repeat;
+    background-size: 45%;
+}
+
+.base_list .ibs .like {
+    background: url(../../../../images_new/list_like.png) center center no-repeat;
+    background-size: 60%;
+}
+
+.base_list .ibs .like.yes {
+    background: url(../../../../images_new/list_like_yes.png) center center no-repeat;
+    background-size: 60%;
+}
+
+.base_list .ibs .detail {
+    background: url(../../../../images_new/list_detail.png) center center no-repeat;
+    background-size: 60%;
+}
+
+.base_list .ibs .delete {
+    background: url(../../../../images_new/list_delete.png) center center no-repeat;
+    background-size: 60%;
+}
+
+.offline .base_list .ibs .play, .offline .base_list .ibs .like,
+.offline .base_list .list_like {
+    border: none;
+    opacity: 1;
+}
+
+.base_list .add {
+    padding: 1rem;
+    float: right;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+}
+
+.base_list .add.success:before {
+    width: 3rem;
+    height: 3rem;
+}
+
+.base_list .cover {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    float: left;
+    margin: 1.5rem 1rem 0 0;
+}
+
+.base_list .cover img {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.base_list .list_play {
+    float: right;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+    padding: 1rem;
+}
+
+.list_play:before {
+    background: url(../../../../images_new/list_play.png) center center no-repeat;
+    background-size: 50%;
+    display: block;
+    content: '';
+}
+
+.base_list .lbtn {
+    float: left;
+    margin-left: -0.5rem;
+}
+
+.base_list .lbtn:before {
+    width: 3rem;
+    height: 3rem;
+}
+
+.base_list span {
+    float: right;
+    line-height: 7rem;
+    color: #b2b2b2;
+    font-size: 1.6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 10rem;
+}
+
+.base_list .have_new {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-top: 3.1rem;
+    margin-right: 0.5rem;
+    border-radius: 0.4rem;
+    float: right;
+    background-color: #4dcb9b;
+}
+
+.base_list .haveMore:before {
+    content: "";
+    float: right;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-top: 2.85rem;
+    background: url(../../../../images_new/icon_have_more.png) center center no-repeat;
+    background-size: 60%;
+    margin-left: 0.5rem;
+}
+
+.base_list .right_image {
+    float: right;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #e2e2e2;
+    margin-top: 1.5rem;
+}
+
+.base_list .right_image img {
+    width: 100%;
+}
+
+.base_list .icons_fruitrabbit {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    float: left;
+    margin-top: 1.5rem;
+}
+
+.base_list.check_list li {
+    padding-right: 0;
+    padding-left: 1rem;
+}
+
+.base_list.check_list li h3:after {
+    content: "";
+    width: 3rem;
+    height: 3rem;
+    float: left;
+    margin-top: 1.5rem;
+}
+
+.base_list.check_list li.select h3:after {
+    background: url(../../../../images_new/list_select.png) center center no-repeat;
+}
+
+/*开关动画及样式*/
+.base_list .switch {
+    height: 2.6rem;
+    width: 4.2rem;
+    margin-top: 1.7rem;
+    border-radius: 1.4rem;
+    float: right;
+    box-shadow: 0 0 1px #999;
+    background-color: #fff;
+    -webkit-transition: background-color 200ms;
+}
+
+.base_list .switch a {
+    content: "";
+    width: 2.5rem;
+    height: 2.5rem;
+    display: block;
+    background-color: #fff;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 1px 1px #999;
+    border: 1px solid #f9f9f9;
+    left: 0;
+    transition: transform 200ms;
+    -webkit-transition: -webkit-transform 200ms;
+}
+
+.base_list .switch.loading {
+    transition: background-color 2s;
+    -webkit-transition: background-color 2s;
+    background-color: #82e1e9;
+}
+
+.base_list .switch.loading a {
+    transition: transform 2s;
+    -webkit-transition: -webkit-transform 2s;
+    transform: translateX(0.8rem);
+    -webkit-transform: translateX(0.8rem);
+}
+
+.base_list .switch.on.loading {
+    transition: background-color 2s;
+    -webkit-transition: background-color 2s;
+    background-color: #82e1e9;
+}
+
+.base_list .switch.on.loading a {
+    transition: transform 2s;
+    -webkit-transition: -webkit-transform 2s;
+    transform: translateX(0.8rem);
+    -webkit-transform: translateX(0.8rem);
+}
+
+.base_list .switch.on {
+    transition: background-color 200ms;
+    -webkit-transition: background-color 200ms;
+    background-color: #4dcb9b;
+}
+
+.base_list .switch.on a {
+    transition: -webkit-transform 200ms;
+    -webkit-transition: -webkit-transform 200ms;
+    transform: translateX(1.7rem);
+    -webkit-transform: translateX(1.7rem);
+}
+
+.base_list.short .icons {
+    margin-top: 1rem;
+}
+
+.base_list.short span {
+    line-height: 6rem;
+}
+
+.base_list.short .have_new {
+    margin-top: 2.6rem;
+}
+
+.base_list.short .haveMore:before {
+    margin-top: 2.35rem;
+}
+
+.base_list.short .right_image {
+    margin-top: 1rem;
+}
+
+.base_list.short li {
+    height: 6rem;
+    padding: 0 1rem;
+}
+
+.base_list .noline:after {
+    display: none;
+}
+
+.base_list.short h3 {
+    line-height: 6rem;
+    margin-left: 1rem;
+}
